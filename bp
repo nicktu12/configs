@@ -1,0 +1,48 @@
+
+PS1='🌜  \W 🌛  '
+
+alias m1="cd ~/turing/mod1"
+alias m2="cd ~/turing/mod2"
+alias m3="cd ~/turing/mod3"
+alias m4="cd ~/turing/mod4"
+alias m5="cd ~/turing/mod5"
+alias gs="git status"
+alias ga="git add ."
+alias gc="git commit -m"
+alias gb="git checkout -b"
+alias gm="git checkout master"
+alias gpb="git push origin"
+alias gpm="git pull origin master"
+alias v.="vim ."
+alias bp="vim ~/.bash_profile"
+alias vrc="vim ~/.vimrc"
+alias oi="open index.html"
+alias ns="npm start"
+alias ni="npm install"
+alias nt="npm run test"
+alias gr="git pull --rebase origin master"
+alias lintfix="./node_modules/.bin/eslint ./ --fix"
+
+function tvo {
+  touch $1
+  vim $1
+}
+
+function tco {
+  touch $1
+  code $1
+}
+
+function gmm {
+  git checkout master
+  git pull origin master
+}
+
+function mkcd {
+  mkdir $1
+  cd $1
+}
+
+function clone {
+  git clone $1
+}
